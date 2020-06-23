@@ -32,8 +32,8 @@ services:
     restart: on-failure
     container_name: docker-front
     build:
-      context: /Users/mac/Desktop/19-checkout-form-populate-credit-card-dates-dependent-dropdown-list/03-frontend/angular-ecommerce
-      dockerfile: /Users/mac/Desktop/19-checkout-form-populate-credit-card-dates-dependent-dropdown-list/03-frontend/angular-ecommerce/Dockerfile
+      context: /Users/mac/Desktop/03-frontend/angular-ecommerce
+      dockerfile: /Users/mac/Desktop/03-frontend/angular-ecommerce/Dockerfile
 
     ports:
       - 8089:80
