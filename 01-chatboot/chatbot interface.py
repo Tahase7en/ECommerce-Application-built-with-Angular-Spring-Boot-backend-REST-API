@@ -185,26 +185,7 @@ def show_products(name):
     return(L)
 
     
-def delete_tache(titre_p,titre_t):
-    
-    #se connecter a l a base de donnees
-    conn = pymysql.connect(host='localhost', user='root', password='1234ABCD????', db='javaee')
-    
-    #Définir un cursor
-    cursor = conn.cursor()
-    
-    #Définir la requete SQL souhaitée
-    query = """ DELETE tache FROM tache INNER JOIN projet ON projet.id_p = tache.id_p WHERE tache.titre_t = %s and projet.titre_p = %s; """
-  
-    #Executer la requete
-    cursor.execute(query,(titre_t,titre_p))
-    
-    #Acccepter le changement
-    conn.commit()
-    
-    #Fermer la connexion avec la base de données
-    conn.close()
-    
+
     
     
 def add_category(nom_m):
